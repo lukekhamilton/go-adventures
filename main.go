@@ -6,4 +6,9 @@ func main() {
 	// Maps()
 	// Range()
 	// Functions()
+	// MultReturnValues()
+	// Variadic()
+	// Closures()
+	Recursion()
+	// Conversions()
 }

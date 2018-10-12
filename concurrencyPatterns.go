@@ -6,7 +6,8 @@ import (
 	"time"
 )
 
-func main() {
+// ConCurr ...
+func ConCurr() {
 	go boring("Boring!")
 	fmt.Println("I'm listening.")
 	time.Sleep(2 * time.Second)
