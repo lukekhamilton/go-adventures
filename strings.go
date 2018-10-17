@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func String() {
 
 	const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
 	// const sample = "Hello World \xe2\x8c\x98 \u2318 \x20"
