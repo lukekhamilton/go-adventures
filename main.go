@@ -9,6 +9,7 @@ func main() {
 	// MultReturnValues()
 	// Variadic()
 	// Closures()
-	Recursion()
+	// Recursion()
 	// Conversions()
+	String1()
 }
