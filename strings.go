@@ -4,10 +4,10 @@ import (
 	"fmt"
 )
 
-func String1() {
+func main() {
 
-	// const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
-	const sample = "Hello World \xe2\x8c\x98 \u2318 \x20"
+	const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
+	// const sample = "Hello World \xe2\x8c\x98 \u2318 \x20"
 
 	fmt.Println(sample)
 	fmt.Println(len(sample))
@@ -22,4 +22,16 @@ func String1() {
 
 	fmt.Printf("%+q\n", sample)
 
+	const placeOfInterest = `⌘`
+
+	fmt.Printf("plain string: ")
+	fmt.Printf("%s\n", placeOfInterest)
+
+	fmt.Printf("quoted string: %+q\n", placeOfInterest)
+
+	fmt.Printf("len: %x\n", len(placeOfInterest))
+	fmt.Printf("hex bytes: ")
+	for i := 0; i < len(placeOfInterest); i++ {
+		fmt.Printf("%x ", placeOfInterest[i])
+	}
 }

@@ -11,5 +11,5 @@ func main() {
 	// Closures()
 	// Recursion()
 	// Conversions()
-	String1()
+	String()
 }
