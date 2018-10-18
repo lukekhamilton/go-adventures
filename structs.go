@@ -9,6 +9,7 @@ type person struct {
 	age  int
 }
 
+// Structs ...
 func Structs() {
 	fmt.Println(person{"Bob", 20})
 

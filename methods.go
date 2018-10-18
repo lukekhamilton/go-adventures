@@ -16,6 +16,7 @@ func (r rect) perim() int {
 	return 2*r.width + 2*r.height
 }
 
+// Methods ...
 func Methods() {
 	r := rect{width: 10, height: 5}
 

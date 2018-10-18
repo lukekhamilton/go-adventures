@@ -12,6 +12,7 @@ func sum(nums ...int) {
 	fmt.Println(total)
 }
 
+// Variadic ...
 func Variadic() {
 	sum(1, 2)
 	sum(1, 2, 3)

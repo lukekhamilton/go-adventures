@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// String ...
 func String() {
 
 	const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
