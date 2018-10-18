@@ -13,5 +13,6 @@ func main() {
 	// Conversions()
 	// String()
 	// Pointers()
-	Structs()
+	// Structs()
+	Methods()
 }
