@@ -12,5 +12,6 @@ func main() {
 	// Recursion()
 	// Conversions()
 	// String()
-	Pointers()
+	// Pointers()
+	Structs()
 }
