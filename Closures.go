@@ -11,6 +11,7 @@ func intSeq() func() int {
 	}
 }
 
+// Closures ...
 func Closures() {
 	nextInt := intSeq()
 

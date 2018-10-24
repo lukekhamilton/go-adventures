@@ -9,6 +9,12 @@ func main() {
 	// MultReturnValues()
 	// Variadic()
 	// Closures()
-	Recursion()
+	// Recursion()
 	// Conversions()
+	// String()
+	// Pointers()
+	// Structs()
+	// Methods()
+	// Interfaces()
+	Errors()
 }
