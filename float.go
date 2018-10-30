@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func Floats() {
 	var x float32 = 1.234
 	var xx float64 = 1.234
 	var xxx = 1.234

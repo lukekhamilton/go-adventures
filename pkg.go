@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/lukekhamilton/golang-getting-started/pkg"
+	"github.com/lukekhamilton/goAdventures/pkg"
 )
 
 var xyz = 4
