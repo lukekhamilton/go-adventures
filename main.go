@@ -16,5 +16,7 @@ func main() {
 	// Structs()
 	// Methods()
 	// Interfaces()
-	Errors()
+	// interfaces.Interfaces()
+	// Errors()
+	XXX()
 }

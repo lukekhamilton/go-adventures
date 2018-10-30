@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func Channels() {
 	messages := make(chan string)
 
 	go func() { messages <- "ping" }()

@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func Make() {
 	fmt.Println("go make keyword")
 
 	x := make([]int, 0, 10)
