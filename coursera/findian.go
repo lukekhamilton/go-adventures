@@ -1,28 +1,40 @@
-package main
+package coursera
 
 import (
 	"fmt"
+	"strings"
 )
 
-var xxx = 123
+var searchChars = []string{"i", "a", "n"}
 
-// Findian ...
-func Findian() {
+const (
+	i = "i"
+	a = "a"
+	n = "n"
+)
+
+// Main ...
+func Main() {
 	var str string
-	fmt.Scan(&str)
-	fmt.Println(str)
-}
+	var found = false
 
-func XXX() {
-	var xtemp int
-	fmt.Println(xxx)
-	x1 := 0
-	x2 := 1
-	for x := 0; x < 5; x++ {
-		xtemp = x2
-		x2 = x2 + x1
-		x1 = xtemp
-		xxx += x1 + x2 + xtemp
+	fmt.Print("Enter data: ")
+	fmt.Scanln(&str)
+	fmt.Printf("Data: %+v\n", str)
+
+	if strings.HasPrefix(str, "i") {
+		found = true
 	}
-	fmt.Println(x2)
+
+	if strings.HasSuffix(str, "n") {
+		found = true
+	}
+
+	if strings.Contains(str, "a") {
+		found = true
+	}
+
+	if found {
+		fmt.Printf("%+v\n", "Found")
+	}
 }
