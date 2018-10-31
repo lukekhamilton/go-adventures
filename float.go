@@ -8,11 +8,11 @@ func Floats() {
 	var xxx = 1.234
 
 	fmt.Println(x)
-	fmt.Printf("%+T\n", x)
+	fmt.Printf("%T\n", x)
 
 	fmt.Println(xx)
-	fmt.Printf("%+T\n", xx)
+	fmt.Printf("%T\n", xx)
 
 	fmt.Println(xxx)
-	fmt.Printf("%+T\n", xxx)
+	fmt.Printf("%T\n", xxx)
 }
