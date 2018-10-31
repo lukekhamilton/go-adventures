@@ -1,4 +1,4 @@
-package coursera
+package main
 
 import (
 	"fmt"

@@ -1,40 +1,45 @@
-package coursera
+package main
 
 import (
+	"bufio"
 	"fmt"
+	"io"
+	"log"
+	"os"
 	"strings"
 )
 
-var searchChars = []string{"i", "a", "n"}
-
-const (
-	i = "i"
-	a = "a"
-	n = "n"
-)
-
-// Main ...
-func Main() {
-	var str string
+func ProcessINPUT(rd io.Reader) string {
 	var found = false
 
 	fmt.Print("Enter data: ")
-	fmt.Scanln(&str)
-	fmt.Printf("Data: %+v\n", str)
+	in := bufio.NewReader(rd)
 
-	if strings.HasPrefix(str, "i") {
-		found = true
+	line, err := in.ReadString('\n')
+	if err != nil {
+		log.Fatal(err)
 	}
 
-	if strings.HasSuffix(str, "n") {
-		found = true
-	}
+	line = strings.Trim(line, "\n")
+	line = strings.ToLower(line)
+	fmt.Printf("Data: '%v'\n", line)
 
-	if strings.Contains(str, "a") {
+	if strings.HasPrefix(line, "i") && strings.HasSuffix(line, "n") && strings.Contains(line, "a") {
 		found = true
 	}
 
 	if found {
-		fmt.Printf("%+v\n", "Found")
+		fmt.Printf("%+v\n", "Found!")
+		return "Found!"
+	}
+
+	fmt.Printf("%+v\n", "Not Found!")
+	return "Not Found!"
+}
+
+// Main ...
+func main() {
+	for {
+		ProcessINPUT(os.Stdin)
 	}
 }
