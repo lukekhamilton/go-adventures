@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
 )
@@ -16,12 +17,11 @@ func main() {
 	scanner.Scan()
 	m["name"] = scanner.Text()
 
-	// fmt.Printf("name: `%v`\n", m["name"])
-
 	fmt.Print("Ender address: ")
 	scanner.Scan()
-	m["addr"] = scanner.Text()
+	m["address"] = scanner.Text()
 
-	// fmt.Printf("addr: `%v`\n", m["addr"])
+	jsonB, _ := json.Marshal(m)
+	fmt.Printf("%+v\n", string(jsonB))
 
 }
