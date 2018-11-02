@@ -1,9 +1,5 @@
 package main
 
-import (
-	"github.com/lukekhamilton/goAdventures/coursera"
-)
-
 func main() {
 	// Arrays()
 	// Slice()
@@ -23,5 +19,6 @@ func main() {
 	// interfaces.Interfaces()
 	// Errors()
 	// coursera.XXX()
-	coursera.Main()
+	// coursera.Main()
+	// SliceAdv()
 }
