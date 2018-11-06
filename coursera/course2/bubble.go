@@ -11,7 +11,7 @@ import (
 // BubbleSort ...
 func BubbleSort(i []int) []int {
 	fmt.Println("------------------------------------------------------")
-	fmt.Println("Raw int Data: ", i)
+	fmt.Println("Input Data: ", i)
 
 	sortMe := true
 
@@ -27,7 +27,7 @@ func BubbleSort(i []int) []int {
 		}
 	}
 
-	fmt.Println("Sorted int Data: ", i)
+	fmt.Println("Sorted Data: ", i)
 	fmt.Println("------------------------------------------------------")
 	return i
 }
