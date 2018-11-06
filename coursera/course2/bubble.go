@@ -10,11 +10,33 @@ import (
 
 // BubbleSort ...
 func BubbleSort(i []int) {
+	fmt.Println("------------------------------------------------------")
+	end := len(i) - 1
 
+	for index := 0; index < len(i)-1; index++ {
+		fmt.Println("i: ", i[index])
+		fmt.Println("Index: ", index)
+
+		if end == 0 {
+			break
+		}
+
+		if i[index] > i[index+1] {
+			Swap(i, index)
+		}
+
+		end--
+	}
+
+	fmt.Println("------------------------------------------------------")
+}
+
+func Swap(s []int, i int) {
+	s[i], s[i+1] = s[i+1], s[i]
 }
 
 func main() {
-	fmt.Println("Please enter up to 10 ints then Press enter")
+	fmt.Println("Please enter some ints then press enter!")
 	fmt.Print(">")
 	s := bufio.NewScanner(os.Stdin)
 	var data []int
@@ -27,13 +49,13 @@ func main() {
 	for _, e := range split {
 		i, err := strconv.Atoi(e)
 		if err != nil {
-			fmt.Println("Err: ", err)
+			fmt.Printf("Dude `%s` isn't a int!\n", e)
 		} else {
-			fmt.Println(i)
 			data = append(data, i)
 		}
 	}
 
-	fmt.Println("Raw Data: ", data)
-
+	fmt.Println("Raw int Data: ", data)
+	BubbleSort(data)
+	fmt.Println("Sorted int Data: ", data)
 }
