@@ -21,7 +21,7 @@ func sliceFoo(sli []int) {
 	sli[0] = sli[0] + 1
 }
 
-func main() {
+func week1() {
 	a := []int{1, 2, 3}
 	sliceFoo(a)
 	fmt.Println(a)
