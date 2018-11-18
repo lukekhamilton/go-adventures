@@ -28,6 +28,7 @@ func f2(arg int) (int, error) {
 	return arg + 3, nil
 }
 
+// Errors ...
 func Errors() {
 	x := []int{7, 42}
 	fmt.Printf("%T, %v, len: %v \n", x, x, len(x))

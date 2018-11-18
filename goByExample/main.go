@@ -1,5 +1,0 @@
-package gobyexample
-
-func main() {
-
-}
