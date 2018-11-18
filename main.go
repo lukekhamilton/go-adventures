@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	gobyexample.ChannelDirections()
+	gobyexample.Select()
 
 }
