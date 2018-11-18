@@ -1,5 +1,5 @@
-# Go Patterns
+# Learn golang design patterns
 
-## Building some golang design patterns as referrenced from here: 
+## References material:
 
-http://tmrts.com/go-patterns/
+1. http://tmrts.com/go-patterns/
