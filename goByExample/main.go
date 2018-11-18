@@ -1,0 +1,5 @@
+package gobyexample
+
+func main() {
+
+}

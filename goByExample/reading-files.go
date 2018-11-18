@@ -1,4 +1,4 @@
-package main
+package gobyexample
 
 import (
 	"bufio"
@@ -14,7 +14,8 @@ func check(err error) {
 	}
 }
 
-func main() {
+// ReadingFiles .....
+func ReadingFiles() {
 	file := "data.txt"
 	dat, err := ioutil.ReadFile(file)
 	check(err)

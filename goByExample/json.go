@@ -1,4 +1,4 @@
-package main
+package gobyexample
 
 import (
 	"encoding/json"
@@ -16,7 +16,7 @@ type respone2 struct {
 	Fruits []string `json:"fruits"`
 }
 
-func main() {
+func Json() {
 	bolB, _ := json.Marshal(true)
 	fmt.Println(string(bolB))
 

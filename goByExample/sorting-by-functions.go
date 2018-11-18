@@ -1,4 +1,4 @@
-package main
+package gobyexample
 
 import (
 	"fmt"
@@ -19,7 +19,8 @@ func (s byLength) Less(i, j int) bool {
 	return len(s[i]) < len(s[j])
 }
 
-func main() {
+// SortingByFunctions ...
+func SortingByFunctions() {
 
 	fruits := []string{"peace", "banana", "kiwi"}
 	fmt.Println(fruits)

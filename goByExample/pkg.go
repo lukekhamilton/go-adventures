@@ -1,13 +1,14 @@
-package main
+package gobyexample
 
 import (
 	"fmt"
 
-	"github.com/lukekhamilton/goAdventures/pkg"
+	"github.com/lukekhamilton/goAdventures/goByExample/pkg"
 )
 
 var xyz = 4
 
+// Pkg ...
 func Pkg() {
 	var x = 1
 	var y int

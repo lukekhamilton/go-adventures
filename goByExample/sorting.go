@@ -1,11 +1,12 @@
-package main
+package gobyexample
 
 import (
 	"fmt"
 	"sort"
 )
 
-func main() {
+// Sorting ...
+func Sorting() {
 	strs := []string{"c", "a", "b"}
 	fmt.Println("Strings: ", strs)
 	fmt.Printf("%T\n", strs)

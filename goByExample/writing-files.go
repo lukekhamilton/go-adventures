@@ -1,8 +1,4 @@
-package main
-
-import (
-	"io/ioutil"
-)
+package gobyexample
 
 func checkErr(err error) {
 	if err != nil {
@@ -10,10 +6,11 @@ func checkErr(err error) {
 	}
 }
 
-func main() {
+// TODO: finish this exercise
+// func main() {
 
-	d1 := byte("hello\ngo\n")
-	err := ioutil.WriteFile("here.txt", d1, 0644)
-	checkErr(err)
+// 	d1 := byte("hello\ngo\n")
+// 	err := ioutil.WriteFile("here.txt", d1, 0644)
+// 	checkErr(err)
 
-}
+// }

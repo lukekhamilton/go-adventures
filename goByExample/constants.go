@@ -1,4 +1,4 @@
-package main
+package gobyexample
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 
 const s string = "constant"
 
-func main() {
+func Constants() {
 	fmt.Println(s)
 
 	const n = 500000000

@@ -1,4 +1,4 @@
-package main
+package gobyexample
 
 import (
 	"bytes"
@@ -57,7 +57,6 @@ func compress() {
 	io.Copy(os.Stdout, gzipReader)
 }
 
-func main() {
+func Buffers() {
 	compress()
-
 }
