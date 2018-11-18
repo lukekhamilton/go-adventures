@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-	gobyexample.Channels()
+	gobyexample.ChannelSync()
+
 }

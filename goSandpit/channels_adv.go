@@ -1,4 +1,4 @@
-package gobyexample
+package gosandpit
 
 import "fmt"
 
@@ -10,6 +10,7 @@ func receive() {
 
 }
 
+// ChannelAdv ...
 func ChannelAdv() {
 	messages := make(chan string)
 

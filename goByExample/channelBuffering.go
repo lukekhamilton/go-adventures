@@ -9,6 +9,7 @@ func ChannelBuffering() {
 	messages <- "buffered"
 	messages <- "channel"
 
-	fmt.Println(<-messages)
-	fmt.Println(<-messages)
+	fmt.Println(<-messages) // Prints chan
+	fmt.Println(<-messages) // Prints chan
+	fmt.Println(<-messages) // blocks chan
 }

@@ -1,7 +1,8 @@
-package main
+package gosandpit
 
 import "fmt"
 
+// SliceAdv ...
 func SliceAdv() {
 	arr := [...]string{"a", "b", "c", "d", "e", "f", "g"}
 	fmt.Printf("%+v\n", arr)
