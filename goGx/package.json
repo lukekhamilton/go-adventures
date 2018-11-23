@@ -9,6 +9,6 @@
   "license": "",
   "name": "goGX",
   "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
-  "version": "0.0.3-dev"
+  "version": "0.0.1"
 }
 
