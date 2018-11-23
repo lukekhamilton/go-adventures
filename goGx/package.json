@@ -1,0 +1,16 @@
+{
+  "author": "metta",
+  "bugs": {
+    "url": "hello@mettadata.com"
+  },
+  "gx": {
+    "dvcsimport": "github.com/lukekhamilton/goAdventures/goGX"
+  },
+  "gxVersion": "0.12.1",
+  "language": "go",
+  "license": "",
+  "name": "goGX",
+  "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
+  "version": "0.0.0"
+}
+
