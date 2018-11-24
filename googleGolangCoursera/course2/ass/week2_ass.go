@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"strconv"
 )
 
@@ -51,9 +50,9 @@ func main() {
 // a acceleration
 // v initialVelocity
 // s initialDisplacement
-func GenDisplaceFn(a float64, v float64, s float64) func(t float64) float64 {
+func GenDisplaceFn(a, v, s float64) func(t float64) float64 {
 	return func(t float64) float64 {
 		// s =½ a t2 + vt + s
-		return .5*a*(math.Pow(t, 2)) + (v * t) + s
+		return .5*a*(t*t) + (v * t) + s
 	}
 }
