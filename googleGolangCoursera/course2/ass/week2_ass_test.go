@@ -18,7 +18,7 @@ func TestGenDisplaceFn1(t *testing.T) {
 
 func TestGenDisplaceFn2(t *testing.T) {
 
-	expected := 24.0
+	expected := 52.0
 	fn := GenDisplaceFn(10.0, 2.0, 1.0)
 	got := fn(3)
 
@@ -29,7 +29,7 @@ func TestGenDisplaceFn2(t *testing.T) {
 
 func TestGenDisplaceFn3(t *testing.T) {
 
-	expected := 24.0
+	expected := 136.0
 	fn := GenDisplaceFn(10.0, 2.0, 1.0)
 	got := fn(5)
 
