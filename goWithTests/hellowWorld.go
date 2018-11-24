@@ -3,11 +3,16 @@ package main
 import "fmt"
 
 // Hello ...
-func Hello(name string) string {
-	if name == "" {
-		return "Hello, World"
+func Hello(name, lang string) string {
+	switch lang {
+	case "Spanish":
+		return "Hola, " + name
+	default:
+		if name == "" {
+			return "Hello, World"
+		}
+		return "Hello, " + name
 	}
-	return "Hello, " + name
 }
 
 // GoodBye ...
