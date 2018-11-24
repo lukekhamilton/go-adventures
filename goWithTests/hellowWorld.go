@@ -3,14 +3,14 @@ package main
 import "fmt"
 
 // Hello ...
-func Hello(msg string) string {
-	return "Hello, " + msg
+func Hello(name string) string {
+	return "Hello, " + name
 }
 
 // GoodBye ...
-func GoodBye(msg string) string {
-	msg = fmt.Sprintf("Goodbye %s, sorry to see you leave!", msg)
-	return msg
+func GoodBye(name string) string {
+	name = fmt.Sprintf("Goodbye %s, sorry to see you leave!", name)
+	return name
 }
 
 func main() {
