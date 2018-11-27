@@ -4,7 +4,15 @@ import (
 	"net/http"
 	"net/http/httputil"
 	"net/url"
+	"os"
 )
+
+func getEnv(key, fallback string) string {
+	if value, ok := os.LookupEnv(key); ok {
+		return value
+	}
+	return fallback
+}
 
 func serverReverseProxy(target string, res http.ResponseWriter, req *http.Request) {
 	//parse the url
