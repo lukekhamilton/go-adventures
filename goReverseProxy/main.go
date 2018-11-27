@@ -7,6 +7,11 @@ import (
 	"os"
 )
 
+func getListenAddress() string {
+	port := getEnv("PORT", "1338")
+	return ":" + port
+}
+
 func getEnv(key, fallback string) string {
 	if value, ok := os.LookupEnv(key); ok {
 		return value

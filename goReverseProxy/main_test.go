@@ -2,6 +2,14 @@ package main
 
 import "testing"
 
+func getListenAddressTest(t *testing.T) {
+	got := getListenAddress()
+	want := ":1338"
+	if got != want {
+		t.Errorf("got: %s, want: %s", got, want)
+	}
+}
+
 func getEnvTest(t *testing.T) {
 	t.Run("Fallback", func(t *testing.T) {
 		got := getEnv("TESTING", "FAIL")
