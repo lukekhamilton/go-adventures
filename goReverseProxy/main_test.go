@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func getListenAddressTest(t *testing.T) {
+func TestGetListenAddress(t *testing.T) {
 	got := getListenAddress()
 	want := ":1338"
 	if got != want {
@@ -10,7 +10,7 @@ func getListenAddressTest(t *testing.T) {
 	}
 }
 
-func getEnvTest(t *testing.T) {
+func TestGetEnv(t *testing.T) {
 	t.Run("Fallback", func(t *testing.T) {
 		got := getEnv("TESTING", "FAIL")
 		want := "FAIL"
@@ -21,7 +21,7 @@ func getEnvTest(t *testing.T) {
 
 	t.Run("Success", func(t *testing.T) {
 		got := getEnv("USER", "FAIL")
-		want := "mett12a"
+		want := "metta"
 		if got != want {
 			t.Errorf("Failed dude! got: %s, want: %s ", got, want)
 		}
