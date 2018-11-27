@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
@@ -19,6 +20,21 @@ func getEnv(key, fallback string) string {
 	return fallback
 }
 
+func logSetup() {
+	aCondtionUrl := os.Getenv("A_CONDITION_URL")
+	bCondtionUrl := os.Getenv("B_CONDITION_URL")
+	defaultCondtionUrl := os.Getenv("DEFAULT_CONDITION_URL")
+
+	log.Printf("Server will run on: %s\n", getListenAddress())
+	log.Printf("Redirecting to A url: %s\n", aCondtionUrl)
+	log.Printf("Redirecting to B url: %s\n", bCondtionUrl)
+	log.Printf("Redirecting to Default url: %s\n", defaultCondtionUrl)
+}
+
+func handleRequestAndRedirect(res http.ResponseWriter, req *http.Request) {
+
+}
+
 func serverReverseProxy(target string, res http.ResponseWriter, req *http.Request) {
 	//parse the url
 	url, _ := url.Parse(target)
@@ -34,5 +50,10 @@ func serverReverseProxy(target string, res http.ResponseWriter, req *http.Reques
 }
 
 func main() {
+	logSetup()
 
+	http.HandleFunc("/", handleRequestAndRedirect)
+	if err := http.ListenAndServe(getListenAddress(), nil); err != nil {
+		panic(err)
+	}
 }
