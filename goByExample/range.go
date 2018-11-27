@@ -24,9 +24,15 @@ func Range() {
 
 	kvs := map[string]string{"a": "apple", "b": "banana"}
 
+	fmt.Println(kvs)
+
 	for k, v := range kvs {
+		// v = "pears"
+		kvs[k] = "pears"
 		fmt.Printf("%s -> %s\n", k, v)
 	}
+
+	fmt.Println(kvs)
 
 	for k := range kvs {
 		fmt.Println("key", k)

@@ -1,0 +1,22 @@
+{
+  "author": "metta",
+  "bugs": {},
+  "gx": {
+    "dvcsimport": "github.com/lukekhamilton/goAdventures/goGX"
+  },
+  "gxDependencies": [
+    {
+      "author": "mr-tron",
+      "hash": "QmWFAMPqsEyUX7gDUsRVmMWz59FxSpJ1b2v6bJ1yYzo7jY",
+      "name": "go-base58-fast",
+      "version": "0.1.1"
+    }
+  ],
+  "gxVersion": "0.12.1",
+  "language": "go",
+  "license": "",
+  "name": "goGX",
+  "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
+  "version": "0.0.1"
+}
+
