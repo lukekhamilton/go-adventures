@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 case `uname -s` in
     Linux*)     sslConfig=/etc/ssl/openssl.cnf;;
     Darwin*)    sslConfig=/System/Library/OpenSSL/openssl.cnf;;
