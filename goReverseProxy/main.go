@@ -23,7 +23,7 @@ func parseRequestBody(req *http.Request) requestPayloadStruct {
 	if err != nil {
 		panic(err)
 	}
-	log.Printf("requestPayload: %s", requestPayload)
+	log.Printf("RequestPayload: %s", requestPayload)
 	return requestPayload
 }
 
