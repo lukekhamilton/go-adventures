@@ -13,7 +13,7 @@ import (
 )
 
 type requestPayloadStruct struct {
-	ProxyCondition string `json:"proxy_condtion"`
+	ProxyCondition string `json:"proxy_condition"`
 }
 
 func parseRequestBody(req *http.Request) requestPayloadStruct {
