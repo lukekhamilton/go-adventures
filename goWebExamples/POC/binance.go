@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	conn = "ws://stream.binance.com:9443"
+	conn = "wss://stream.binance.com:9443/ws/bnbbtc@ticker"
 )
 
 func main() {
@@ -27,7 +27,28 @@ func main() {
 		log.Println("Recieved connect error ", err)
 	}
 
-	socket.EnableLogging()
+	socket.OnTextMessage = func(message string, socket gowebsocket.Socket) {
+		log.Println("Recieved message " + message)
+	}
+
+	socket.OnBinaryMessage = func(data []byte, socket gowebsocket.Socket) {
+		log.Println("Recieved binary data ", data)
+	}
+
+	socket.OnPingReceived = func(data string, socket gowebsocket.Socket) {
+		log.Println("Recieved ping " + data)
+	}
+
+	socket.OnPongReceived = func(data string, socket gowebsocket.Socket) {
+		log.Println("Recieved pong " + data)
+	}
+
+	socket.OnDisconnected = func(err error, socket gowebsocket.Socket) {
+		log.Println("Disconnected from server ")
+		return
+	}
+
+	// socket.EnableLogging()
 	socket.Connect()
 
 	for {
