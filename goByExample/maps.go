@@ -1,11 +1,11 @@
-package gobyexample
+package main
 
 import (
 	"fmt"
 )
 
 // Maps ...
-func Maps() {
+func main() {
 	fmt.Println("Hello world")
 
 	m := make(map[string]int)
@@ -28,5 +28,11 @@ func Maps() {
 
 	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("map:", n)
+
+	y := map[string]int{"bar": 1}
+	fmt.Println("y: ", y)
+
+	z := map[string]string{}
+	fmt.Println("z:", z)
 
 }
