@@ -18,7 +18,7 @@ func init() {
 	log.SetLevel(log.WarnLevel)
 }
 
-func main() {
+func logrus() {
 	log.WithFields(log.Fields{
 		"animal": "walrus",
 		"size":   10,
