@@ -63,6 +63,12 @@ func init() {
                 "$ref": "#/definitions/item"
               }
             }
+          },
+          "default": {
+            "description": "generic error responses",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
           }
         }
       }
@@ -151,6 +157,12 @@ func init() {
               "items": {
                 "$ref": "#/definitions/item"
               }
+            }
+          },
+          "default": {
+            "description": "generic error responses",
+            "schema": {
+              "$ref": "#/definitions/error"
             }
           }
         }

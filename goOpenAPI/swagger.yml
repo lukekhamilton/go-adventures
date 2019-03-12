@@ -58,6 +58,6 @@ paths:
             items:
               $ref: "#/definitions/item"
         default:
-          definitions: generic error responses
+          description: generic error responses
           schema:
             $ref: "#/definitions/error"
