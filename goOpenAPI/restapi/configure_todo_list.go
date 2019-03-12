@@ -34,6 +34,9 @@ func configureAPI(api *operations.TodoListAPI) http.Handler {
 
 	api.JSONProducer = runtime.JSONProducer()
 
+	api.TodosAddOneHandler = todos.AddOneHandlerFunc(func(params todos.AddOneParams) middleware.Responder {
+		return middleware.NotImplemented("operation todos.AddOne has not yet been implemented")
+	})
 	api.TodosFindTodosHandler = todos.FindTodosHandlerFunc(func(params todos.FindTodosParams) middleware.Responder {
 		return middleware.NotImplemented("operation todos.FindTodos has not yet been implemented")
 	})

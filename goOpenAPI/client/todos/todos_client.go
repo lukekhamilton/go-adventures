@@ -25,6 +25,34 @@ type Client struct {
 }
 
 /*
+AddOne add one API
+*/
+func (a *Client) AddOne(params *AddOneParams) (*AddOneCreated, error) {
+	// TODO: Validate the params before sending
+	if params == nil {
+		params = NewAddOneParams()
+	}
+
+	result, err := a.transport.Submit(&runtime.ClientOperation{
+		ID:                 "addOne",
+		Method:             "POST",
+		PathPattern:        "/",
+		ProducesMediaTypes: []string{"application/io.goswagger.examples.todo-list.v1+json"},
+		ConsumesMediaTypes: []string{"application/io.goswagger.examples.todo-list.v1+json"},
+		Schemes:            []string{"http"},
+		Params:             params,
+		Reader:             &AddOneReader{formats: a.formats},
+		Context:            params.Context,
+		Client:             params.HTTPClient,
+	})
+	if err != nil {
+		return nil, err
+	}
+	return result.(*AddOneCreated), nil
+
+}
+
+/*
 FindTodos find todos API
 */
 func (a *Client) FindTodos(params *FindTodosParams) (*FindTodosOK, error) {

@@ -1,7 +1,7 @@
 FILE=swagger.yml
 APP=todo-list
 
-generate: validate generate_client generate_server deps
+generate: validate generate_client generate_server generate_doco
 
 validate:
 	swagger validate ${FILE}
