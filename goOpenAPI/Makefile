@@ -19,7 +19,7 @@ generate_model:
 	swagger generate model --spec=${FILE}
 
 clean:
-	rm -rf cmd client models restapi logs/*
+	rm -rf cmd client models restapi logs/* public
 
 doco:
 	redoc-cli serve ${FILE}
@@ -31,4 +31,4 @@ server_doco:
 	http-server public/lean:
 
 build:
-	go build
+	go install ./cmd/todo-list-server/
