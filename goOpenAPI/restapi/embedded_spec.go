@@ -69,6 +69,21 @@ func init() {
     }
   },
   "definitions": {
+    "error": {
+      "type": "object",
+      "required": [
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
     "item": {
       "type": "object",
       "required": [
@@ -143,6 +158,21 @@ func init() {
     }
   },
   "definitions": {
+    "error": {
+      "type": "object",
+      "required": [
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
     "item": {
       "type": "object",
       "required": [
