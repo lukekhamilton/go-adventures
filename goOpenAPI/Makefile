@@ -1,4 +1,5 @@
 FILE=swagger.yml
+APP=todo-list
 
 generate: validate generate_client generate_server deps
 
@@ -9,10 +10,10 @@ deps:
 	go get -u ./...
 
 generate_client:
-	swagger generate client -f ${FILE} # -o logs/swagger_pet_store_client.log
+	swagger generate client -A ${APP} -f ${FILE} # -o logs/swagger_pet_store_client.log
 
 generate_server:
-	swagger generate server -f ${FILE} # -o logs/swagger_pet_store_server.log
+	swagger generate server -A ${APP} -f ${FILE} # -o logs/swagger_pet_store_server.log
 
 generate_model:
 	swagger generate model --spec=${FILE}
@@ -28,3 +29,6 @@ generate_doco:
 
 server_doco:
 	http-server public/lean:
+
+build:
+	go build
