@@ -39,6 +39,21 @@ func init() {
         "tags": [
           "todos"
         ],
+        "parameters": [
+          {
+            "type": "integer",
+            "format": "int64",
+            "name": "since",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "format": "int32",
+            "default": 20,
+            "name": "limit",
+            "in": "query"
+          }
+        ],
         "responses": {
           "200": {
             "description": "list the todo operations",
@@ -97,6 +112,21 @@ func init() {
       "get": {
         "tags": [
           "todos"
+        ],
+        "parameters": [
+          {
+            "type": "integer",
+            "format": "int64",
+            "name": "since",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "format": "int32",
+            "default": 20,
+            "name": "limit",
+            "in": "query"
+          }
         ],
         "responses": {
           "200": {

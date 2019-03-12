@@ -9,11 +9,18 @@ import (
 	"errors"
 	"net/url"
 	golangswaggerpaths "path"
+
+	"github.com/go-openapi/swag"
 )
 
 // GetURL generates an URL for the get operation
 type GetURL struct {
+	Limit *int32
+	Since *int64
+
 	_basePath string
+	// avoid unkeyed usage
+	_ struct{}
 }
 
 // WithBasePath sets the base path for this url builder, only required when it's different from the
@@ -39,6 +46,26 @@ func (o *GetURL) Build() (*url.URL, error) {
 
 	_basePath := o._basePath
 	_result.Path = golangswaggerpaths.Join(_basePath, _path)
+
+	qs := make(url.Values)
+
+	var limit string
+	if o.Limit != nil {
+		limit = swag.FormatInt32(*o.Limit)
+	}
+	if limit != "" {
+		qs.Set("limit", limit)
+	}
+
+	var since string
+	if o.Since != nil {
+		since = swag.FormatInt64(*o.Since)
+	}
+	if since != "" {
+		qs.Set("since", since)
+	}
+
+	_result.RawQuery = qs.Encode()
 
 	return &_result, nil
 }

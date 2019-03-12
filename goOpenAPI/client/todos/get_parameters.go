@@ -13,6 +13,7 @@ import (
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
 	cr "github.com/go-openapi/runtime/client"
+	"github.com/go-openapi/swag"
 
 	strfmt "github.com/go-openapi/strfmt"
 )
@@ -20,8 +21,11 @@ import (
 // NewGetParams creates a new GetParams object
 // with the default values initialized.
 func NewGetParams() *GetParams {
-
+	var (
+		limitDefault = int32(20)
+	)
 	return &GetParams{
+		Limit: &limitDefault,
 
 		timeout: cr.DefaultTimeout,
 	}
@@ -30,8 +34,11 @@ func NewGetParams() *GetParams {
 // NewGetParamsWithTimeout creates a new GetParams object
 // with the default values initialized, and the ability to set a timeout on a request
 func NewGetParamsWithTimeout(timeout time.Duration) *GetParams {
-
+	var (
+		limitDefault = int32(20)
+	)
 	return &GetParams{
+		Limit: &limitDefault,
 
 		timeout: timeout,
 	}
@@ -40,8 +47,11 @@ func NewGetParamsWithTimeout(timeout time.Duration) *GetParams {
 // NewGetParamsWithContext creates a new GetParams object
 // with the default values initialized, and the ability to set a context for a request
 func NewGetParamsWithContext(ctx context.Context) *GetParams {
-
+	var (
+		limitDefault = int32(20)
+	)
 	return &GetParams{
+		Limit: &limitDefault,
 
 		Context: ctx,
 	}
@@ -50,8 +60,11 @@ func NewGetParamsWithContext(ctx context.Context) *GetParams {
 // NewGetParamsWithHTTPClient creates a new GetParams object
 // with the default values initialized, and the ability to set a custom HTTPClient for a request
 func NewGetParamsWithHTTPClient(client *http.Client) *GetParams {
-
+	var (
+		limitDefault = int32(20)
+	)
 	return &GetParams{
+		Limit:      &limitDefault,
 		HTTPClient: client,
 	}
 }
@@ -60,6 +73,12 @@ func NewGetParamsWithHTTPClient(client *http.Client) *GetParams {
 for the get operation typically these are written to a http.Request
 */
 type GetParams struct {
+
+	/*Limit*/
+	Limit *int32
+	/*Since*/
+	Since *int64
+
 	timeout    time.Duration
 	Context    context.Context
 	HTTPClient *http.Client
@@ -98,6 +117,28 @@ func (o *GetParams) SetHTTPClient(client *http.Client) {
 	o.HTTPClient = client
 }
 
+// WithLimit adds the limit to the get params
+func (o *GetParams) WithLimit(limit *int32) *GetParams {
+	o.SetLimit(limit)
+	return o
+}
+
+// SetLimit adds the limit to the get params
+func (o *GetParams) SetLimit(limit *int32) {
+	o.Limit = limit
+}
+
+// WithSince adds the since to the get params
+func (o *GetParams) WithSince(since *int64) *GetParams {
+	o.SetSince(since)
+	return o
+}
+
+// SetSince adds the since to the get params
+func (o *GetParams) SetSince(since *int64) {
+	o.Since = since
+}
+
 // WriteToRequest writes these params to a swagger request
 func (o *GetParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
 
@@ -105,6 +146,38 @@ func (o *GetParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry)
 		return err
 	}
 	var res []error
+
+	if o.Limit != nil {
+
+		// query param limit
+		var qrLimit int32
+		if o.Limit != nil {
+			qrLimit = *o.Limit
+		}
+		qLimit := swag.FormatInt32(qrLimit)
+		if qLimit != "" {
+			if err := r.SetQueryParam("limit", qLimit); err != nil {
+				return err
+			}
+		}
+
+	}
+
+	if o.Since != nil {
+
+		// query param since
+		var qrSince int64
+		if o.Since != nil {
+			qrSince = *o.Since
+		}
+		qSince := swag.FormatInt64(qrSince)
+		if qSince != "" {
+			if err := r.SetQueryParam("since", qSince); err != nil {
+				return err
+			}
+		}
+
+	}
 
 	if len(res) > 0 {
 		return errors.CompositeValidationError(res...)
