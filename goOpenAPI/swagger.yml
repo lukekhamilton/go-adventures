@@ -57,4 +57,7 @@ paths:
             type: array
             items:
               $ref: "#/definitions/item"
-
+        default:
+          definitions: generic error responses
+          schema:
+            $ref: "#/definitions/error"
