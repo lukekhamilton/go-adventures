@@ -30,5 +30,8 @@ generate_doco:
 server_doco:
 	http-server public/lean:
 
-build:
+build: generate
 	go install ./cmd/todo-list-server/
+
+run: build
+	todo-list-server
