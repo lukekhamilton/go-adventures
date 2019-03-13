@@ -9,6 +9,7 @@ produces:
 schemes:
 - http
 swagger: "2.0"
+host: 127.0.0.1
 definitions:
   error:
     type: object
@@ -35,6 +36,24 @@ definitions:
       completed:
         type: boolean
 paths:
+  /{id}:
+    delete:
+      tags:
+      - todos
+      operationId: destroyOne
+      parameters:
+        - type: integer
+          format: int64
+          name: id
+          in: path
+          required: true
+      responses:
+        204:
+          description: Deleted
+        default:
+          description: error
+          schema:
+            $ref: "#/definitions/error"
   /:
     post:
       tags:
