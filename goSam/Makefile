@@ -22,7 +22,7 @@ build:
 test:
 	go test ./...
 
-run:
+run: build
 	sam local start-api
 
 bootstrap:
