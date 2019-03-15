@@ -46,7 +46,7 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 		StatusCode: 200,
 	}
 
-	log.Println("return : ", re.Body, " StatusCode: ", re.StatusCode)
+	log.Println("return :", re.StatusCode, " ", re.Body)
 	return re, nil
 }
 
