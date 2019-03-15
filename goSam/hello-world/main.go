@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 
 	"github.com/aws/aws-lambda-go/events"
@@ -40,10 +41,13 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 		return events.APIGatewayProxyResponse{}, ErrNoIP
 	}
 
-	return events.APIGatewayProxyResponse{
+	re := events.APIGatewayProxyResponse{
 		Body:       fmt.Sprintf("Hello, %v", string(ip)),
 		StatusCode: 200,
-	}, nil
+	}
+
+	log.Println("return : ", re)
+	return re, nil
 }
 
 func main() {
