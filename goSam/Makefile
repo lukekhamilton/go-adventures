@@ -29,7 +29,7 @@ bootstrap:
 	echo $(ts) > .tmp
 	aws s3 mb s3://$(BUCKET)
 
-test:
+local_test:
 	curl http://127.0.0.1:3000/hello
 
 destroy: package
