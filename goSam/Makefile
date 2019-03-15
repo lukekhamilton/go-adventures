@@ -29,6 +29,8 @@ bootstrap:
 	echo $(ts) > .tmp
 	aws s3 mb s3://$(BUCKET)
 
+test:
+	curl http://127.0.0.1:3000/hello
 
 destroy: package
 	aws s3 rb s3://$(BUCKET)
@@ -39,7 +41,7 @@ package:
 		--output-template-file package.yaml \
 		--s3-bucket "$(BUCKET)" \
 
-deploy:
+deploy: package
 	sam deploy \
 		--template-file package.yaml \
 		--stack-name $(APP) \
