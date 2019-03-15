@@ -30,7 +30,7 @@ bootstrap:
 	aws s3 mb s3://$(BUCKET)
 
 
-destroy:
+destroy: package
 	aws s3 rb s3://$(BUCKET)
 
 package:
