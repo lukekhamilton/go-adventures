@@ -1,4 +1,4 @@
-package gobyexample
+package main
 
 import (
 	"fmt"
@@ -28,4 +28,8 @@ func Select() {
 			fmt.Println("received: ", msg2)
 		}
 	}
+}
+
+func main() {
+	Select()
 }

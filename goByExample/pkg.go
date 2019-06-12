@@ -1,9 +1,9 @@
-package gobyexample
+package main
 
 import (
 	"fmt"
 
-	"github.com/lukekhamilton/goAdventures/goByExample/pkg"
+	"./pkg"
 )
 
 var xyz = 4

@@ -1,4 +1,4 @@
-package gobyexample
+package main
 
 import (
 	"fmt"
@@ -19,4 +19,8 @@ func ChannelSync() {
 	go worker(done, 2)
 	fmt.Println("main running")
 	<-done
+}
+
+func main() {
+	ChannelSync()
 }

@@ -1,4 +1,4 @@
-package gobyexample
+package main
 
 import "fmt"
 
@@ -11,5 +11,8 @@ func ChannelBuffering() {
 
 	fmt.Println(<-messages) // Prints chan
 	fmt.Println(<-messages) // Prints chan
-	fmt.Println(<-messages) // blocks chan
+}
+
+func main() {
+	ChannelBuffering()
 }

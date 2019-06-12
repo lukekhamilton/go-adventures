@@ -1,4 +1,4 @@
-package gobyexample
+package main
 
 func checkErr(err error) {
 	if err != nil {

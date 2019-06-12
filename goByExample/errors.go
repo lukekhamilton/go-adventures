@@ -1,4 +1,4 @@
-package gobyexample
+package main
 
 import (
 	"errors"

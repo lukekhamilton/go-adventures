@@ -1,4 +1,4 @@
-package gobyexample
+package main
 
 import "fmt"
 
@@ -8,7 +8,6 @@ func Channels() {
 
 	go func() { messages <- "ping" }()
 
-	// msg := <-messages
-	fmt.Println(<-messages) // Prints chan
-	fmt.Println(<-messages) // blocks chan
+	msg := <-messages
+	fmt.Println(msg) // Prints chan
 }
