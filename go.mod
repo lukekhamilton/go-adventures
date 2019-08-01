@@ -6,6 +6,7 @@ require (
 	github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf // indirect
 	github.com/aws/aws-lambda-go v1.9.0
 	github.com/cjbassi/drawille-go v0.1.0 // indirect
+	github.com/cskr/pubsub v1.0.2
 	github.com/gizak/termui v0.0.0-20190301220459-a9772ca75330
 	github.com/go-openapi/analysis v0.18.0 // indirect
 	github.com/go-openapi/errors v0.18.0
