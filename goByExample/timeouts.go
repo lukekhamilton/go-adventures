@@ -6,7 +6,7 @@ import (
 )
 
 // Timeouts ...
-func Timeouts() {
+func main() {
 	c1 := make(chan string, 1)
 
 	go func() {
