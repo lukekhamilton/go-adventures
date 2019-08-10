@@ -34,6 +34,7 @@ require (
 	github.com/qri-io/jsonschema v0.0.0-20190413152851-094d15abc20e
 	github.com/sacOO7/go-logger v0.0.0-20180719173527-9ac9add5a50d // indirect
 	github.com/sacOO7/gowebsocket v0.0.0-20180719182212-1436bb906a4e
+	github.com/sdcoffey/techan v0.0.0-20190712174126-35e5bd2670c7 // indirect
 	github.com/sirupsen/logrus v1.4.0
 	github.com/stretchr/testify v1.3.0 // indirect
 	github.com/zserge/webview v0.0.0-20190123072648-16c93bcaeaeb
