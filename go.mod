@@ -31,15 +31,16 @@ require (
 	github.com/mattn/go-runewidth v0.0.4 // indirect
 	github.com/mattn/go-sqlite3 v1.10.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
+	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
+	github.com/modern-go/reflect2 v1.0.1 // indirect
+	github.com/prometheus/client_golang v1.1.0 // indirect
 	github.com/qri-io/jsonschema v0.0.0-20190413152851-094d15abc20e
 	github.com/sacOO7/go-logger v0.0.0-20180719173527-9ac9add5a50d // indirect
 	github.com/sacOO7/gowebsocket v0.0.0-20180719182212-1436bb906a4e
 	github.com/sdcoffey/techan v0.0.0-20190712174126-35e5bd2670c7 // indirect
 	github.com/sirupsen/logrus v1.4.0
-	github.com/stretchr/testify v1.3.0 // indirect
 	github.com/zserge/webview v0.0.0-20190123072648-16c93bcaeaeb
 	golang.org/x/arch v0.0.0-20190226203302-36aee92af9e8 // indirect
-	golang.org/x/net v0.0.0-20190311183353-d8887717615a
-	golang.org/x/sys v0.0.0-20190312061237-fead79001313 // indirect
+	golang.org/x/net v0.0.0-20190613194153-d28f0bde5980
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 )
