@@ -8,6 +8,10 @@ require (
 	github.com/aws/aws-lambda-go v1.9.0
 	github.com/cjbassi/drawille-go v0.1.0 // indirect
 	github.com/cskr/pubsub v1.0.2
+	github.com/denisenkom/go-mssqldb v0.0.0-20190806190131-db2462fef53b // indirect
+	github.com/erikstmartin/go-testdb v0.0.0-20160219214506-8d10e4a1bae5 // indirect
+	github.com/gin-contrib/sse v0.1.0 // indirect
+	github.com/gin-gonic/gin v1.4.0
 	github.com/gizak/termui v0.0.0-20190301220459-a9772ca75330
 	github.com/go-openapi/analysis v0.18.0 // indirect
 	github.com/go-openapi/errors v0.18.0
@@ -19,28 +23,41 @@ require (
 	github.com/go-openapi/strfmt v0.18.0
 	github.com/go-openapi/swag v0.18.0
 	github.com/go-openapi/validate v0.18.0
+	github.com/go-sql-driver/mysql v1.4.1 // indirect
+	github.com/gofrs/uuid v3.2.0+incompatible // indirect
+	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/uuid v1.1.1 // indirect
-	github.com/gorilla/mux v1.7.0
+	github.com/gorilla/mux v1.7.3
 	github.com/gorilla/websocket v1.4.0
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jinzhu/gorm v1.9.2
 	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
+	github.com/jinzhu/now v1.0.1 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
+	github.com/kr/pretty v0.1.0 // indirect
+	github.com/lib/pq v1.2.0 // indirect
 	github.com/mailru/easyjson v0.0.0-20190221075403-6243d8e04c3f // indirect
-	github.com/maruel/panicparse v1.1.1 // indirect
+	github.com/mattn/go-isatty v0.0.9 // indirect
 	github.com/mattn/go-runewidth v0.0.4 // indirect
 	github.com/mattn/go-sqlite3 v1.10.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
-	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-	github.com/modern-go/reflect2 v1.0.1 // indirect
-	github.com/prometheus/client_golang v1.1.0 // indirect
+	github.com/prometheus/client_golang v1.1.0
+	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4 // indirect
+	github.com/prometheus/common v0.6.0
 	github.com/qri-io/jsonschema v0.0.0-20190413152851-094d15abc20e
 	github.com/sacOO7/go-logger v0.0.0-20180719173527-9ac9add5a50d // indirect
 	github.com/sacOO7/gowebsocket v0.0.0-20180719182212-1436bb906a4e
-	github.com/sdcoffey/techan v0.0.0-20190712174126-35e5bd2670c7 // indirect
-	github.com/sirupsen/logrus v1.4.0
+	github.com/sdcoffey/big v0.0.0-20180413224939-438f3d83db4c
+	github.com/sdcoffey/techan v0.0.0-20190712174126-35e5bd2670c7
+	github.com/sergi/go-diff v1.0.0 // indirect
+	github.com/sirupsen/logrus v1.4.2
+	github.com/stretchr/testify v1.4.0 // indirect
+	github.com/ugorji/go/codec v1.1.7 // indirect
 	github.com/zserge/webview v0.0.0-20190123072648-16c93bcaeaeb
-	golang.org/x/arch v0.0.0-20190226203302-36aee92af9e8 // indirect
-	golang.org/x/net v0.0.0-20190613194153-d28f0bde5980
+	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4 // indirect
+	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+	golang.org/x/text v0.3.2 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 )
+
+replace bitbucket.org/ff_common/metrics => /Users/metta/Dropbox/Code/__clients__/frankiefinancial/ff_common/metrics
