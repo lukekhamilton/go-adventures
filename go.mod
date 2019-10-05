@@ -1,10 +1,9 @@
 module github.com/lukekhamilton/goAdventures
 
 require (
+	github.com/99designs/gqlgen v0.10.1
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
 	github.com/alash3al/go-pubsub v0.0.0-20181220233502-636a19c01258
-	github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc // indirect
-	github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf // indirect
 	github.com/aws/aws-lambda-go v1.9.0
 	github.com/cjbassi/drawille-go v0.1.0 // indirect
 	github.com/cskr/pubsub v1.0.2
@@ -34,7 +33,6 @@ require (
 	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
 	github.com/jinzhu/now v1.0.1 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
-	github.com/kr/pretty v0.1.0 // indirect
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mailru/easyjson v0.0.0-20190221075403-6243d8e04c3f // indirect
 	github.com/mattn/go-isatty v0.0.9 // indirect
@@ -49,10 +47,10 @@ require (
 	github.com/sacOO7/gowebsocket v0.0.0-20180719182212-1436bb906a4e
 	github.com/sdcoffey/big v0.0.0-20180413224939-438f3d83db4c
 	github.com/sdcoffey/techan v0.0.0-20190712174126-35e5bd2670c7
-	github.com/sergi/go-diff v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.4.2
 	github.com/stretchr/testify v1.4.0 // indirect
-	github.com/ugorji/go/codec v1.1.7 // indirect
+	github.com/ugorji/go v1.1.7 // indirect
+	github.com/vektah/gqlparser v1.1.2
 	github.com/zserge/webview v0.0.0-20190123072648-16c93bcaeaeb
 	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4 // indirect
 	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
@@ -61,3 +59,5 @@ require (
 )
 
 replace bitbucket.org/ff_common/metrics => /Users/metta/Dropbox/Code/__clients__/frankiefinancial/ff_common/metrics
+
+go 1.13
