@@ -1,4 +1,4 @@
-package gqlgen
+package getting_started
 
 type Todo struct {
 	ID     string
