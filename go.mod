@@ -5,12 +5,9 @@ require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
 	github.com/alash3al/go-pubsub v0.0.0-20181220233502-636a19c01258
 	github.com/aws/aws-lambda-go v1.9.0
+	github.com/binance-chain/go-sdk v1.2.1
 	github.com/bitfinexcom/bitfinex-api-go v0.0.0-20191125162309-765ab3684a8b
-	github.com/btcsuite/btcd v0.0.0-20171128150713-2e60448ffcc6
-	github.com/btcsuite/btclog v0.0.0-20170628155309-84c8d2346e9f // indirect
-	github.com/btcsuite/btcutil v0.0.0-20190425235716-9e5f4b9a998d // indirect
-	github.com/btcsuite/go-socks v0.0.0-20170105172521-4720035b7bfd // indirect
-	github.com/btcsuite/websocket v0.0.0-20150119174127-31079b680792 // indirect
+	github.com/btcsuite/btcd v0.20.1-beta
 	github.com/cjbassi/drawille-go v0.1.0 // indirect
 	github.com/cskr/pubsub v1.0.2
 	github.com/davecgh/go-spew v1.1.1
@@ -46,6 +43,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.10.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7 // indirect
+	github.com/openlyinc/pointy v1.1.2
 	github.com/prometheus/client_golang v1.1.0
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4 // indirect
 	github.com/prometheus/common v0.6.0
@@ -58,7 +56,6 @@ require (
 	github.com/ugorji/go v1.1.7 // indirect
 	github.com/vektah/gqlparser v1.1.2
 	github.com/zserge/webview v0.0.0-20190123072648-16c93bcaeaeb
-	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4 // indirect
 	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 )
