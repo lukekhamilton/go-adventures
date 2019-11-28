@@ -6,6 +6,11 @@ require (
 	github.com/alash3al/go-pubsub v0.0.0-20181220233502-636a19c01258
 	github.com/aws/aws-lambda-go v1.9.0
 	github.com/bitfinexcom/bitfinex-api-go v0.0.0-20191125162309-765ab3684a8b
+	github.com/btcsuite/btcd v0.0.0-20171128150713-2e60448ffcc6
+	github.com/btcsuite/btclog v0.0.0-20170628155309-84c8d2346e9f // indirect
+	github.com/btcsuite/btcutil v0.0.0-20190425235716-9e5f4b9a998d // indirect
+	github.com/btcsuite/go-socks v0.0.0-20170105172521-4720035b7bfd // indirect
+	github.com/btcsuite/websocket v0.0.0-20150119174127-31079b680792 // indirect
 	github.com/cjbassi/drawille-go v0.1.0 // indirect
 	github.com/cskr/pubsub v1.0.2
 	github.com/davecgh/go-spew v1.1.1
