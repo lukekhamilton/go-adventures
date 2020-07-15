@@ -27,6 +27,9 @@ require (
 	github.com/go-openapi/strfmt v0.18.0 // indirect
 	github.com/go-openapi/swag v0.18.0 // indirect
 	github.com/go-openapi/validate v0.18.0 // indirect
+	github.com/go-playground/locales v0.13.0
+	github.com/go-playground/universal-translator v0.17.0
+	github.com/go-playground/validator/v10 v10.3.0
 	github.com/go-sql-driver/mysql v1.4.1 // indirect
 	github.com/gofrs/uuid v3.2.0+incompatible // indirect
 	github.com/google/uuid v1.1.1 // indirect
